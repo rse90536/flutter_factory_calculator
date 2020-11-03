@@ -5,21 +5,17 @@ abstract class Calculator {
     switch (operationSymbol) {
       case '+':
         return Addition(result, calcNum);
-        // result += double.tryParse(calcNum) ?? 0;
         break;
       case '-':
         return Subtraction(result, calcNum);
 
-        // result -= double.tryParse(calcNum) ?? 0;
         break;
       case '*':
         return Multiplication(result, calcNum);
 
-        // result *= double.tryParse(calcNum) ?? 0;
         break;
       case '/':
         return Division(result, calcNum);
-        // result /= double.tryParse(calcNum) ?? 0;
         break;
       default:
         throw "error operationSymbol";
@@ -27,17 +23,7 @@ abstract class Calculator {
     }
   }
 
-//  String initNum;
-// String calcNum = '';
-// String operationSymbol = '';
-// double result;
-// bool shouldCalculate = false;
 
-// factory Calculator(String buttonText){
-//   switch(buttonText){
-//
-//   }
-// }
 
 }
 

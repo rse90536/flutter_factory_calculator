@@ -29,25 +29,21 @@ class HomeScreenState extends State<HomeScreen> {
       case '+':
         calc = Calculator("+", result, calcNum);
         result = calc.startCalculate();
-        // result += double.tryParse(calcNum) ?? 0;
         break;
       case '-':
         calc = Calculator("-", result, calcNum);
         result = calc.startCalculate();
 
-        // result -= double.tryParse(calcNum) ?? 0;
         break;
       case '*':
         calc = Calculator("*", result, calcNum);
         result = calc.startCalculate();
 
-        // result *= double.tryParse(calcNum) ?? 0;
         break;
       case '/':
         calc = Calculator("/", result, calcNum);
         result = calc.startCalculate();
 
-        // result /= double.tryParse(calcNum) ?? 0;
         break;
       default:
         break;
@@ -149,41 +145,4 @@ class HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
-// Widget _calButton(String buttonText) {
-//   return Expanded(
-//     child: ButtonTheme(
-//       height: double.infinity,
-//       child: OutlineButton(
-//         onPressed: () => {},
-//         child: Text(
-//           buttonText,
-//           style: TextStyle(
-//             fontSize: 32,
-//             fontWeight: FontWeight.w700,
-//           ),
-//         ),
-//         splashColor: Colors.grey,
-//         borderSide: BorderSide(
-//           color: Colors.black,
-//         ),
-//         highlightedBorderColor: Colors.black,
-//       ),
-//     ),
-//   );
-// }
-//
-// Widget _buttonRow(String firstButton, String secondButton, String thirdButton,
-//     String fourthButton) {
-//   return Expanded(
-//     child: Row(
-//       children: <Widget>[
-//         _calButton(firstButton),
-//         _calButton(secondButton),
-//         _calButton(thirdButton),
-//         _calButton(fourthButton),
-//       ],
-//     ),
-//   );
-// }
 }
