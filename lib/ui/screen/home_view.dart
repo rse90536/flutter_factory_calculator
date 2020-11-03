@@ -28,26 +28,24 @@ class HomeScreenState extends State<HomeScreen> {
     switch (operationSymbol) {
       case '+':
         calc = Calculator("+", result, calcNum);
-        result = calc.startCalculate();
         break;
       case '-':
         calc = Calculator("-", result, calcNum);
-        result = calc.startCalculate();
 
         break;
       case '*':
         calc = Calculator("*", result, calcNum);
-        result = calc.startCalculate();
 
         break;
       case '/':
         calc = Calculator("/", result, calcNum);
-        result = calc.startCalculate();
 
         break;
       default:
         break;
     }
+    result = calc.startCalculate();
+
     if (result.isNaN) result = 0;
     calcNum = result.toString();
     initNum = calcNum;
